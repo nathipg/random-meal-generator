@@ -1,0 +1,49 @@
+.App {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 2rem 12rem;
+}
+
+.App .header {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+p.danger {
+    color: crimson;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 550px) {
+    .column-4 {
+        width: 33.33%;
+    }
+
+    .column-8 {
+        width: 62.66%;
+        padding-left: 4%;
+    }
+
+    [class^='column'] {
+        display: flex;
+        flex-direction: column;
+    }
+}

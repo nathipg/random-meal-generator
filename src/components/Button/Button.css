@@ -1,0 +1,12 @@
+.Button {
+    color: white;
+    text-transform: uppercase;
+    padding: 0.7rem 2rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.primary {
+    border: 1px solid darkturquoise;
+    background-color: darkturquoise;
+}
