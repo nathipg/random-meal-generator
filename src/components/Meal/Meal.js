@@ -9,7 +9,7 @@ const Meal = props => {
     console.log(ytUrl);
 
     for(let i = 1; i <= 20; i++) {
-        if(meal[`strIngredient${i}`] === '')
+        if(!meal || meal[`strIngredient${i}`] === '')
             break;
 
         ingredients.push( meal[`strIngredient${i}`] + ' - ' + meal[`strMeasure${i}`] );
@@ -23,18 +23,18 @@ const Meal = props => {
                     <p><strong>Category:</strong> {meal.strCategory}</p>
                     <p><strong>Area:</strong> {meal.strArea}</p>
                     {meal.strTags ? <p><strong>Tags:</strong> {meal.strTags}</p> : null}
-                    <h3>Ingredients:</h3>
+                    <h2>Ingredients:</h2>
                     <ul>
                         {ingredients.map((ing, key) => <li key={key}>{ing}</li>)}
                     </ul>
                 </div>
                 <div className="column-8">
-                    <h2>{meal.strMeal}</h2>
+                    <h1>{meal.strMeal}</h1>
                     <p>{meal.strInstructions}</p>
                 </div>
             </div>
             <div className="row">
-                <h3>Video Recipe</h3>
+                <h2>Video Recipe</h2>
             </div>
             <div className="row">
                 <div className="container-video">

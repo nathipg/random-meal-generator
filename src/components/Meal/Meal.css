@@ -1,5 +1,18 @@
 .Meal {
     margin-top: 2rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #222;
+}
+
+.Meal ul {
+    list-style: circle inside;
+    margin: 0;
+    padding: 0;
+}
+
+.Meal p, .Meal li {
+    font-size: 0.9rem;
 }
 
 .Meal img {
