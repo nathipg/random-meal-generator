@@ -10,7 +10,6 @@ function App() {
     const [meal, setMeal] = useState(null);
     const [apiError, setApiError] = useState(null);
 
-
     const getRandomMeal = async () => {
         axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
             .then(meal => {

@@ -1,6 +1,6 @@
 .App {
     font-family: Helvetica, Arial, sans-serif;
-    margin: 2rem 12rem;
+    margin: 2rem 2rem;
 }
 
 .App .header {
@@ -27,23 +27,22 @@ img {
     max-width: 100%;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-}
+@media (min-width: 960px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
 
-@media (min-width: 550px) {
+    .App {
+        margin: 2rem 10rem;
+    }
+
     .column-4 {
-        width: 33.33%;
+        width: 33%;
     }
 
     .column-8 {
-        width: 62.66%;
-        padding-left: 4%;
-    }
-
-    [class^='column'] {
-        display: flex;
-        flex-direction: column;
+        width: 60%;
+        margin-left: 4%;
     }
 }
